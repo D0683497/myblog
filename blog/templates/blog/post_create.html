@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}Django 部落格{% endblock %}
+
+{% block content %}
+<div class="container">
+    <form class="form-post" method="POST">
+        {% csrf_token %}
+
+        <div class="text-center mb-4">
+            <h1 class="h3 mb-3 font-weight-normal">Django 部落格 - 新增文章</h1>
+        </div>
+
+        <div class="form-group">
+            <input class="form-control" type="text" placeholder="標題" name="title">
+        </div>
+
+        <div class="form-group">
+            <textarea class="form-control" name="text" rows="5" placeholder="內文"></textarea>
+        </div>
+
+        <div class="mb-3 d-flex justify-content-between">
+            <input type="submit" class="btn btn-lg btn-primary btn-block">
+        </div>
+
+        <p class="mt-5 mb-3 text-muted text-center">&copy; 2019</p>
+    </form>
+</div>
+{% endblock %}
