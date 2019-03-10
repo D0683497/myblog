@@ -13,3 +13,13 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+"""
+一個文章有多個 tag，一對多的關係
+"""
+class Tag(models.Model):
+    contact = models.ForeignKey(Post,on_delete=models.CASCADE)
+    name = models.CharField(max_length=50)
+    
+    def __str__(self):
+        return self.name
