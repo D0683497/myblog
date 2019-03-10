@@ -31,23 +31,25 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'post_create' %}">發文</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'post_list' %}">文章</a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         課程簡報
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="https://hackmd.io/c/BkpIRkrIN/%2F23zAfyAgT0OfTn8oFWdpBQ" target="_blank">第一份簡報</a>
-                        <a class="dropdown-item" href="https://hackmd.io/c/HyMivGMDV/%2Fm4f5BgzwTbmrhfVCwdN6zg" target="_blank">第二份簡報</a>
+                        <a class="dropdown-item" href="https://hackmd.io/c/BkpIRkrIN/%2F23zAfyAgT0OfTn8oFWdpBQ"
+                            target="_blank">第一份簡報</a>
+                        <a class="dropdown-item" href="https://hackmd.io/c/HyMivGMDV/%2Fm4f5BgzwTbmrhfVCwdN6zg"
+                            target="_blank">第二份簡報</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">補充</a>
+                        <a class="dropdown-item" href="{% url 'course_additional' %}">補充</a>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'post_create' %}">發文</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'post_list' %}">文章</a>
                 </li>
             </ul>
         </div>

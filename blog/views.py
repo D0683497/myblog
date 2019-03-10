@@ -18,3 +18,6 @@ def post_create(request):
         new_post.publish()
         return redirect('post_list')
     return render(request, 'blog/post_create.html', {})
+
+def course_additional(request):
+    return render(request, 'course_additional.html', {})

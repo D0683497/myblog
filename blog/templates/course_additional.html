@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}Django 部落格 - 補充{% endblock %}
+
+{% block content %}
+<div class="container">
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">說明</th>
+                <th scope="col">網址</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Python 基本語法</td>
+                <td><a href="https://docs.google.com/document/d/1rqNkpVzFRz-Rwekc5RaujVizqeCNSjblRe5set-fRao/edit"
+                        target="_blank">https://docs.google.com/document/d/1rqNkpVzFRz-Rwekc5RaujVizqeCNSjblRe5set-fRao/edit</a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>看 Django 的版本</td>
+                <td><code>python -c "import django;print(django.VERSION)"</code></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>資料庫欄位格式定義</td>
+                <td><a href="https://docs.djangoproject.com/en/2.1/ref/models/fields/"
+                        target="_blank">https://docs.djangoproject.com/en/2.1/ref/models/fields/</a></td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Python 書</td>
+                <td><a href="https://doggy8088.github.io/A-Whirlwind-Tour-of-Python-zh-tw/"
+                        target="_blank">https://doggy8088.github.io/A-Whirlwind-Tour-of-Python-zh-tw/</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock %}
